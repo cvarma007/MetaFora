@@ -1,0 +1,45 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+dist/
+.vite/
+
+# Editor and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+# Large datasets - excluded from GitHub
+data/processed/gtfs_stop_connections.csv
+data/processed/October-Delhi-cleaned.csv
+data/raw/October-Delhi.csv
+data/raw/October-Delhi.csv.zip
+data/raw/stop_times.txt
+# Unnecessary generated data
+data/raw/__MACOSX/
+data/processed/*
+!data/processed/metafora_bus_graph.pkl
+data/predictions/*
+!data/predictions/random_forest_model.pkl
+# Keep only runtime-required raw GTFS files
+data/raw/*
+!data/raw/stops.txt
+!data/raw/routes.txt
